@@ -1,0 +1,128 @@
+.navbar{
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #ffffff;
+    padding: 0px 2px;
+    background-color: rgb(210, 208, 196);
+}
+.logo{
+    width: 160px;
+    cursor: pointer;
+}
+ul{
+    flex: 1;
+    list-style: none;
+    text-align: center;
+}
+ul li{
+    display: inline-block;
+    margin: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+}
+.toggle-icon{
+    width: 50px;
+    cursor: pointer;
+    margin-left: 40px;
+}
+.search-box{
+    display: flex;
+    align-items: center;
+    background: rgb(210, 202, 139);
+    padding: 10px 20px;
+    border-radius: 50px;
+}
+.search-box input{
+    padding: 6px;
+    background: transparent;
+    border: 0;
+    outline: 0;
+    color: #fff;
+    font-size: 18px;
+    max-width: 200px;
+}
+.search-box input::placeholder{
+    color: #fff;
+}
+.search-box img{
+    width: 20px;
+    cursor: pointer;
+}
+
+
+.btnhover {
+    --c: rgb(212, 203, 182);
+    text-decoration-color: var(--c);
+    font-size: 14px;
+    border-radius: 0.2em;
+    width: 4rem;
+    height: 3em;
+    font-weight: bold;
+    font-family: sans-serif;
+    letter-spacing: 0.1em;
+    text-align: center;
+    line-height: 3em;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    transition: 0.5s;
+    margin: 10px;
+    border-radius: 10px;
+    margin-top: 30px;
+  }
+  
+  .btnhover span {
+    position: absolute;
+    width: 25%;
+    height: 100%;
+    background-color: var(--c);
+    transform: translateY(150%);
+    border-radius: 50%;
+    left: calc((var(--n) - 1) * 25%);
+    transition: 0.5s;
+    transition-delay: calc((var(--n) - 1) * 0.1s);
+    z-index: -1;
+  }
+  
+  nav ul li:hover {
+    color: black;
+  }
+  
+  nav ul li:hover span {
+    transform: translateY(0) scale(2);
+  }
+  
+  nav ul li span:nth-child(1) {
+    --n: 1;
+  }
+  
+  nav ul li span:nth-child(2) {
+    --n: 2;
+  }
+  
+  nav ul li span:nth-child(3) {
+    --n: 3;
+  }
+  
+  nav ul li span:nth-child(4) {
+    --n: 4;
+  }
+
+  /* Existing styles... */
+
+/* Add styles for mobile view */
+@media (max-width: 768px) {
+  .form-control-control {
+      width: 100% !important;
+      margin-bottom: 1rem;
+
+  }
+
+  .navbar-collapse {
+      flex-direction: column;
+  }
+}
+
+
