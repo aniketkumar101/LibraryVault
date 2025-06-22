@@ -1,0 +1,7 @@
+{
+  "dependencies": {
+    "react-responsive": "^10.0.0",
+    "react-swiper": "^0.1.5",
+    "react-toastify": "^10.0.5"
+  }
+}
